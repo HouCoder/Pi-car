@@ -1,0 +1,44 @@
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.container__icon {
+    font-size: 150px
+
+    // https://css-tricks.com/almanac/properties/u/user-select/
+    user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100vw;
+    }
+
+    .container__icon {
+        font-size: 33.3333vw;
+    }
+}
+
+.container__up,
+.container__down
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container__middle {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.is-active {
+    color: red;
+}
